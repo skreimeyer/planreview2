@@ -1,0 +1,17 @@
+Dear {{applicant.salutation}}:
+
+
+
+The above referenced plans are {% if not approved %}not {% endif %}approved with the following comments and conditions:
+{% for comment in comments %}
+{{loop.index}}. {{comment}}
+{% endfor %}
+If you have any questions or desire additional information, please contact me by phone at 501-918-5348 or by email at skreimeyer@littlerock.gov
+
+Sincerely,
+
+Samuel Kreimeyer
+Civil Engineer I
+City of Little Rock Public Works
+skreimeyer@littlerock.gov
+(501) 918-5348
